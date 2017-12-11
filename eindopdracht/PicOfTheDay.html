@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture of the day</title>
+    <link rel="stylesheet" href="style/screen.css">
+    <script src="script/javascript.js"></script>
+
+</head>
+<body>
+    <div id="navbar">
+        <div class="navElement">
+            <a href="https://www.nasa.gov/"><img id="logo" src="assets/nasa-logo.svg"/></a>
+        </div>
+
+
+        <div class="navElementMiddle">
+            <h1 id="title"></h1>
+            <!--<div class="divDate">-->
+            <label id="lblDate" for="theDate">Date of picture </label>
+
+            <input name="theDate" id="theDate" type="date" oninput="processDay()">
+
+            <!--</div>-->
+        </div>
+        <div class="navElement">
+            <label class="switch"> <label id="lblDarkmode">Darkmode</label>
+                <input id="Darkmode" type="checkbox" onchange="DarkMode(this)">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="main">
+
+        <!-- trying to set it at 60% than put height at auto-->
+
+        <img id="picDay" />
+        <iframe id="vidDay" src="" style="width:0; height:0; border:none;"></iframe>
+    </div>
+    <p id="explanation"></p>
+
+    <footer>
+        <!--<div class="Form">-->
+            <form>
+                <div>
+                    <label id="lblContact"> Contact us</label>
+                </div>
+                <div class="left half">
+                    <!--<label for="fname">First Name</label>-->
+                    <input type="text" class="contact" id="name" name="firstname" placeholder="Name">
+
+                    <!--<label for="lname">Last Name</label>-->
+                    <input type="text" class="contact" id="email" name="lastname" placeholder="Email address">
+
+                    <input type="text" class="contact" id="subject" name="lastname" placeholder="Subject">
+
+                    <!--<label for="Provincie">Provincie</label>-->
+                    <!--<select class="contact" id="Provincie" name="Provincie">-->
+                        <!--<option value="Antwerpen">Antwerpen</option>-->
+                        <!--<option value="Limburg">Limburg</option>-->
+                        <!--<option value="Oost-Vlaanderen">Oost-Vlaanderen</option>-->
+                        <!--<option value="West-Vlaanderen">West-Vlaanderen</option>-->
+                        <!--<option value="Vlaams-Brabant">Vlaams-Brabant</option>-->
+
+                    <!--</select>-->
+                </div>
+                <div class="right half">
+                    <textarea name="message" id="message" class="contact"
+                              cols="30" rows="5" placeholder="Message"></textarea>
+
+                </div>
+                <input class="contact" type="submit" value="Submit">
+
+
+            </form>
+        <!--</div>-->
+    </footer>
+</body>
+</html>

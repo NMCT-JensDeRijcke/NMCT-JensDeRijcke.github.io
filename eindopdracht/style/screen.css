@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather";
+    background-color: #F5F5F5;
+
+
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    height: auto;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    z-index: 99999;
+    border-bottom: 1px solid #5d7fb9;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+#navbar label{
+    color: whitesmoke;
+}
+
+
+
+#logo{
+    height: 70px;
+}
+
+#title{
+    position: relative;
+    text-align: center;
+    /*width: 60%;*/
+    margin-top: 25px;
+    margin: auto;
+    color: whitesmoke;
+    /*border: 3px solid green;*/
+}
+
+
+#lblDarkmode{
+    position: relative;
+    top: 3px;
+    right: 90px;
+}
+
+#theDate{
+    background-color: #525252;
+    color: whitesmoke;
+    margin-top: 30px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 110px;
+}
+
+
+
+
+
+/*MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+.main{
+    margin: 8px;
+}
+
+.divDate{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}
+
+
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+
+
+
+#picDay{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    alignment: center;
+    /*height: 100vh; !*calc(100vh - 150px)*!*/
+    /*max-width: 95vw;*/
+
+}
+
+#vidDay{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+
+
+    alignment: center;
+    height: calc(100vh - 350px);
+
+}
+
+
+#explanation{
+    background-color: #5d7fb9;
+    color: whitesmoke;
+
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 20px;
+    font-family: "Merriweather";
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+
+/*.Form{*/
+    /*margin: 0;*/
+    /*background-color: #5d7fb9;*/
+    /*padding: 20px;*/
+/*}*/
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+footer{
+    margin: 0;
+    /*background-color: #5d7fb9;*/
+    background-color: #333;
+    padding: 20px;
+}
+
+.switch input {display:none;}
+
+input[type=submit]:hover {
+    background-color: rgb(113, 113, 113);
+}
+
+
+.switch {
+    position: absolute;
+    top: 27px;
+    right: 7px;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+.slider.round {
+    border-radius: 24px;
+}
+
+input:checked + .slider {
+    background: #5d7fb9;
+}
+
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+
+.slider.round:before {
+    border-radius: 50%;
+
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+
+
+form{
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+    font-family: "Merriweather";
+}
+
+
+.contact{
+
+    margin-bottom: 11px;
+    border-radius: 5px;
+    border: none;
+    padding: 2px;
+    alignment: left;
+    width:100%;
+    font-family: "Merriweather";
+}
+
+
+
+
+#lblContact{
+    color: whitesmoke;
+    display: inline-block;
+    margin-bottom: 10px;
+    /*border-bottom: 1px solid whitesmoke;*/
+}
+
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+
+.right {
+    width: 50%;
+}
+
+
+.left {
+    margin-right: 2%;
+}
+
+
+
+
+
+@media screen and (min-width: 400px){
+    .navElement{
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .navElementMiddle{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .main{
+        padding-top: 150px;
+    }
+
+}
+@media screen and (min-width: 700px) {
+    .navElement{
+        width: 17%;
+        margin: 0 auto;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .navElementMiddle{
+        width: 66%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .main{
+        padding-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
